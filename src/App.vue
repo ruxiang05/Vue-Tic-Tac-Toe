@@ -1,15 +1,26 @@
 <template>
     <div id="app">
-
+        <div id="details">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <board></board>
     </div>
 </template>
 
 <script>
+    import Board from "./components/Board.vue";
     export default {
         name: 'app',
+        components: {
+            'board': Board
+        },
         data () {
             return {
-
+                matched: 0,
+                wins: {
+                    O: 0,
+                    X: 0
+                }
             }
         }
     }
