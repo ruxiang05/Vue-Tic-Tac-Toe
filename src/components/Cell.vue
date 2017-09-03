@@ -50,7 +50,7 @@
         border-right-color: transparent;
     }
 
-    .tr:nth-of-type(3) {
+    tr:nth-of-type(3) .cell {
         border-bottom-color: transparent;
     }
 </style>
